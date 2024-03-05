@@ -1,0 +1,16 @@
+{
+    "applinks": {
+        "details": [
+            {
+                "appIDs": [
+                    "94578VNHQR.com.dev.techuz.drgalaxymobile"
+                ],
+                "components": [
+                    {
+                        "/": "*"
+                    }
+                ]
+            }
+        ]
+    }
+}
