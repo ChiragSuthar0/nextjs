@@ -19,8 +19,18 @@ const aasa = {
     "applinks": {
         "details": [
             {
-                "appID": "94578VNHQR.com.dev.techuz.drgalaxymobile",
-                "paths": ["*"]
+                "appIDs": ["94578VNHQR.com.dev.techuz.drgalaxymobile"],
+                "components": [
+                    {
+                        "/": "/*",
+                        "comment": "Matches any URL beginning with /"
+                    },
+                    {
+                        "/": "/path/1/*",
+                        "exclude": true,
+                        "comment": "Matches any URL beginning with /path/1/ and instructs the system not to open it as a universal link"
+                    },
+                ]
             }
         ]
     }
