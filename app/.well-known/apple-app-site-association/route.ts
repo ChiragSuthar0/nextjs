@@ -20,7 +20,7 @@ const aasa = {
         "details": [
             {
                 "appIDs": [
-                    "94578VNHQR.com.techuz.testingproject"
+                    "94578VNHQR.com.dev.techuz.testingproject"
                 ],
                 "components": [
                     {
