@@ -24,7 +24,28 @@ const aasa = {
                 ],
                 "components": [
                     {
-                        "/": "*",
+                        "#": "no_universal_links",
+                        "exclude": true,
+                        "comment": "Matches any URL with a fragment that equals no_universal_links and instructs the system not to open it as a universal link."
+                    },
+                    {
+                        "/": "/post/*",
+                        "comment": "Matches any URL with a path that starts with /post/."
+                    },
+                    {
+                        "/": "/help/website/*",
+                        "exclude": true,
+                        "comment": "Matches any URL with a path that starts with /help/website/ and instructs the system not to open it as a universal link."
+                    },
+                    {
+                        "/": "/help/*",
+                        "?": {
+                            "articleNumber": "????"
+                        },
+                        "comment": "Matches any URL with a path that starts with /help/ and that has a query item with name 'articleNumber' and a value of exactly four characters."
+                    },
+                    {
+                        "/": "/path/*",
                     },
                 ]
             }
